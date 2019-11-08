@@ -58,4 +58,4 @@ Make sure the Tests run successfully:
 
 **6.** Write client Unit Tests
 
-**7.** Implement a way to kill the microservice process
+**7.** Implement a better solution to kill the microservice process
