@@ -47,9 +47,15 @@ Make sure the Tests run successfully:
 ## TODOS
 
 **1.** Upgrade Angular to version 7 from 5
+
 **2.** Finish error handling on client side and enhance file logging on microservice side
+
 **3.** Clean up Typescript
+
 **4.** Add spinner to page
+
 **5.** Finish writing Unit Tests
+
 **6.** Write client Unit Tests
+
 **7.** Implement a way to kill the microservice process
