@@ -2,7 +2,7 @@
 
 This document and project work serves to showcase my web development skills. The application represents my code challenge.
 
-## Application
+### Application
 
 Here is a sample of my application (a viewer of things):
 
@@ -21,11 +21,7 @@ The app uses Public API called Quote Garden.  It is a REST API for quotes. The d
 Only the search term API feature is utilized. For information about this Public API read https://pprathameshmore.github.io/QuoteGarden/#get-all-quotes.
 Use this link to test if the service is up and running: https://quote-garden.herokuapp.com/
 
-**Table of Contents**
-
-[TOC]
-
-# Installation
+## Installation
 
 The installation requires Nodejs.  You need to execute a Java executable jar file which runs a Springboot microservice.
 
