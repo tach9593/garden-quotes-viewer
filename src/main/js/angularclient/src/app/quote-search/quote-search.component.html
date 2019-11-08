@@ -1,0 +1,50 @@
+<div class="grid-container">
+	<div class="grid-y grid-margin-y">
+		<div class="cell small-6 sticky">
+		  <div class="top-bar">
+		    <div class="top-bar-left">
+		      <ul class="dropdown menu" data-dropdown-menu>
+		      <li class="menu-text"><span><img src="http://www.pngmart.com/files/5/Quotes-PNG-Image.png" alt="" style="height:50px;"></span></li>
+		      <li class="menu-text"><h2>Quote Garden Viewer</h2></li>
+		      </ul>
+		    </div>
+		    <div class="top-bar-right">
+		      <ul class="menu">
+		        <li><input #searchBox type="search" placeholder="Search Words in Quotes" id="search-box"/></li>
+		        <li><button class="button" type="button"(click)="search(searchBox.value)" data-position="bottom" data-alignment="center">Find</button></li>
+		      </ul>
+		    </div>
+		  </div>
+		</div>
+
+		<ng-template
+  			*ngIf="show;then showBlock; else notShowBlock">
+		</ng-template>
+
+		<ng-template #notShowBlock>
+		    <div class="cell small-6">
+		      <span class="error">{{ error$ }}</span>
+	    	</div>
+  	    </ng-template>
+
+		<ng-template #showBlock>
+			<div class="cell small-6">
+			  <table>
+			    <thead>
+			      <tr>
+			        <th width="200">Author</th>
+			        <th width="400">Quote</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr *ngFor="let quote of quotes$ | async">
+				      <td>{{ quote.quoteAuthor }}</td>
+				      <td>{{ quote.quoteText }}</td>
+				  </tr>
+			    </tbody>
+			  </table>
+		   </div>
+		</ng-template>
+
+	</div>
+</div>

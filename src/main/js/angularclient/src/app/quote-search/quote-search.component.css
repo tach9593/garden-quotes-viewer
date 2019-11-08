@@ -1,0 +1,66 @@
+$primary-color: rgba(dodgerblue, 0.25);
+$secondary-color: rgba(red, 0.25);
+$light-gray: #e6e6e6;
+$success-color: #3adb76;
+
+body {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.grid-x,
+.grid-y {
+  background: $light-gray;
+  margin-bottom: 1rem;
+}
+
+.cell {
+  background: $secondary-color;
+  border: 1px solid black;
+  
+span {
+    background: $primary-color;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#error {
+    border: 1px solid red;
+}
+  
+  > .grid-x,
+    .grid-y {
+    .column,
+    .columns {
+      background: $success-color;
+      border: 1px solid black;
+
+      span {
+        background: darken($success-color, 30%);
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.box {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  
+  &.blue {
+    background: $primary-color;
+  }
+  
+  &.gray {
+    background: $secondary-color;
+  }
+  
+  &.black {
+    background: #000;
+  }
+}
