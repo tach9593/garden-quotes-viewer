@@ -6,7 +6,7 @@ This document and project work serves to showcase my web development skills. The
 
 Here is a sample of my application (a viewer of things):
 
-![](https://bitbucket.org/tach9593/quoteservice/raw/6cafce3b07fb461cb798dc290c891402307467e6/GardenQuotesProject.png)
+![](https://github.com/tach9593/quotesserver/blob/master/GardenQuotesProject.png?raw=true)
 
 ### About
 
