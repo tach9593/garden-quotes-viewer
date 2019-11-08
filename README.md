@@ -33,7 +33,7 @@ The installation requires Nodejs.  You need to execute a Java executable jar fil
 
 **Step 3**: Run "npm install".  Make sure the node modules folder is installed. 
 
-**Step 4**: Now open your IDE.  You need to build the Springboot project. Using your IDE, import the project quoteservice from your local file system. Run a Maven install build target to create the jar.   Find the location of the executable jar and double click on  quoteservice-0.0.1-SNAPSHOT.jar.   There currently isn't easy way to terminate the microservice (See TODO). You'll need to manually kill the running process on your machine.
+**Step 4**: Now open your IDE.  You need to build the Springboot project. Using your IDE, import the project quoteservice from your local file system. Run a Maven install build target to create the jar.   Find the location of the executable jar and double click on  quoteservice-0.0.1-SNAPSHOT.jar.   There currently isn't an easy way to terminate the microservice (See TODO #7). You'll need to manually kill the running process on your machine.
 Make sure the Tests run successfully:
 [INFO] Results:
 [INFO] 
