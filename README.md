@@ -27,13 +27,13 @@ The installation requires Nodejs.  You need to execute a Java executable jar fil
 
 ## Steps
 
-**Step 1**: Open a command window and clone this project from bitbucket.git "clone https://github.com/tach9593/quotesserver.GIT"
+**Step 1**: Open a command window and clone this project from github.git "git clone https://github.com/tach9593/quotesserver.git"
 
-**Step 2**: Now change the directory to the project "cd /<project path>/quoteservice/src/main/js/angularclient"
+**Step 2**: Now change the directory to the project "cd /<project path>/src/main/js/angularclient"
 
 **Step 3**: Run "npm install".  Make sure the node modules folder is installed. 
 
-**Step 4**: Now open your IDE.  You need to build the Spring project. Using your IDE, import the project quoteservice from the file system. Run a Maven build to create the jar.   Under the projects target folder locate quoteservice-0.0.1-SNAPSHOT.jar.  This is an executable jar file. Double click on this file to start up the service. There currently isn't a clean way terminate the microservice. You'll need to manually kill the running process on your machine.
+**Step 4**: Now open your IDE.  You need to build the Springboot project. Using your IDE, import the project quoteservice from your local file system. Run a Maven install build target to create the jar.   Find the location of the executable jar and double click on  quoteservice-0.0.1-SNAPSHOT.jar.   There currently isn't easy way to terminate the microservice (See TODO). You'll need to manually kill the running process on your machine.
 Make sure the Tests run successfully:
 [INFO] Results:
 [INFO] 
@@ -52,4 +52,4 @@ Make sure the Tests run successfully:
 **4** Add spinner to page
 **5** Finish writing Unit Tests
 **6** Write client Unit Tests
-**7** Implement a way to kill the microservice
+**7** Implement a way to kill the microservice process
