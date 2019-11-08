@@ -31,7 +31,7 @@ The installation requires Nodejs.  You need to execute a Java executable jar fil
 
 ##Steps
 
-**Step 1**: Open a command window and clone this project from bitbucket.git "clone https://bitbucket.org/tach9593/quoteservice.git"
+**Step 1**: Open a command window and clone this project from bitbucket.git "clone https://github.com/tach9593/quotesserver.GIT"
 
 **Step 2**: Now change the directory to the project "cd /<project path>/quoteservice/src/main/js/angularclient"
 
