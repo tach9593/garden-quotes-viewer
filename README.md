@@ -8,10 +8,6 @@ Here is a sample of my application (a viewer of things):
 
 ![](https://bitbucket.org/tach9593/quoteservice/raw/6cafce3b07fb461cb798dc290c891402307467e6/GardenQuotesProject.png)
 
-**Table of Contents**
-
-[TOC]
-
 ### About
 
 **Step 1**: Open the web page using [http://localhost:4200/](http://localhost:4200/) and when the page loads enter a search term. Use full words. There are no restrictions in the number of characters you search on.
@@ -24,6 +20,10 @@ The app uses Public API called Quote Garden.  It is a REST API for quotes. The d
 
 Only the search term API feature is utilized. For information about this Public API read https://pprathameshmore.github.io/QuoteGarden/#get-all-quotes.
 Use this link to test if the service is up and running: https://quote-garden.herokuapp.com/
+
+**Table of Contents**
+
+[TOC]
 
 # Installation
 
