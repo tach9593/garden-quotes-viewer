@@ -27,9 +27,9 @@ The installation requires Nodejs.  You need to execute a Java executable jar fil
 
 ## Steps
 
-**Step 1**: Open a command window and clone this project from github.git "git clone https://github.com/tach9593/quotesserver.git"
+**Step 1**: Open a command window and clone this project from github "git clone https://github.com/tach9593/quotesserver.git"
 
-**Step 2**: Now change the directory to the project "cd /<project path>/src/main/js/angularclient"
+**Step 2**: Now change the directory to the project "cd /'project path'/src/main/js/angularclient"
 
 **Step 3**: Run "npm install".  Make sure the node modules folder is installed. 
 
