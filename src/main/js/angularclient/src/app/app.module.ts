@@ -1,31 +1,42 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
-import { NgProgressModule, NgProgressBrowserXhr } from 'ngx-progressbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserXhr } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule, MatDialogRef, MatDialogContent } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
+import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 import { QuoteSearchComponent } from './quote-search/quote-search.component';
 import { QuoteService } from './service/quote-service.service';
- 
+import { ErrorDialogService } from './service/error-dialog.service';
+import { HttpConfigInterceptor} from './interceptor/httpconfig.interceptor';
+
 @NgModule({
   declarations: [
     AppComponent,
-    QuoteSearchComponent
+    QuoteSearchComponent,
+    ErrorDialogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
     FormsModule,
-    HttpModule,
-    NgProgressModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDialogModule,
+    HttpClientModule
   ],
-  providers: [QuoteService, 
-              {provide: BrowserXhr, useClass: NgProgressBrowserXhr}],
+  providers: [
+     QuoteService,
+     ErrorDialogService,
+     { provide: MatDialogRef, useValue: {} },     
+     { provide: HTTP_INTERCEPTORS, useClass: HttpConfigInterceptor, multi: true }
+  ],
+  entryComponents: [ErrorDialogComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 	
