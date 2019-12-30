@@ -6,7 +6,7 @@ This document and project work serves to showcase my web development skills. The
 
 Here is a sample of my application (a viewer of things):
 
-![](https://bitbucket.org/tach9593/quoteservice/raw/6cafce3b07fb461cb798dc290c891402307467e6/GardenQuotesProject.png)
+![](https://github.com/tach9593/quotesserver/blob/master/GardenQuotesProject.png?raw=true)
 
 ### About
 
@@ -33,7 +33,7 @@ The installation requires Nodejs.  You need to execute a Java executable jar fil
 
 **Step 3**: Run "npm install".  Make sure the node modules folder is installed. 
 
-**Step 4**: Now open your IDE.  You need to build the Springboot project. Using your IDE, import the project quoteservice from your local file system. Run a Maven install build target to create the jar.   Find the location of the executable jar and double click on  quoteservice-0.0.1-SNAPSHOT.jar.   There currently isn't an easy way to terminate the microservice (See TODO #7). You'll need to manually kill the running process on your machine.
+**Step 4**: Now open your IDE.  You need to build the Springboot project. Using your IDE, import the project quoteservice from your local file system. Run a Maven install build target to create the jar.   Find the location of the executable jar and double click on  quoteservice-0.0.1-SNAPSHOT.jar.   There currently isn't an easy way to terminate the microservice (See TODO #7). You'll need to manually kill the running process on your machine or run a post request "http://localhost:8080/shutdownContext" through Postman.
 Make sure the Tests run successfully:
 [INFO] Results:
 [INFO] 
@@ -58,4 +58,4 @@ Make sure the Tests run successfully:
 
 **6.** Write client Unit Tests
 
-**7.** Implement a way to kill the microservice process
+**7.** Implement a better solution to kill the microservice process
