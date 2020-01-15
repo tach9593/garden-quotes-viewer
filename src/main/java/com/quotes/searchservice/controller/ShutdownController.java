@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class ShutdownController implements ApplicationContextAware {
      
     private ApplicationContext context;
-     
+    
+    /**
+     * Kills the context and the o/s process
+     */
     @PostMapping("/shutdownContext")
     public void shutdownContext() {
         ((ConfigurableApplicationContext) context).close();
