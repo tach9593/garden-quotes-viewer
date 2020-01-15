@@ -16,6 +16,11 @@ public class QuoteServiceController {
 	@Autowired
 	public QuoteService quoteService;
 	
+	/**
+	 * Returns a list of quotes using term as the search criteria.
+	 * @param term
+	 * @return
+	 */
 	@GetMapping("/quotes/{term}")
 	public Quote[] quotes(@PathVariable String term)
     {
