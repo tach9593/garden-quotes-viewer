@@ -17,7 +17,7 @@ public class QuoteServiceController {
 	public QuoteService quoteService;
 	
 	/**
-	 * Rest request searches quotes using a search term.
+	 * Returns a list of quotes using a search term.
 	 * @param term
 	 * @return Quote array
 	 */
