@@ -16,6 +16,11 @@ public class QuoteServiceController {
 	@Autowired
 	public QuoteService quoteService;
 	
+	/**
+	 * Rest request searches quotes using a search term.
+	 * @param term
+	 * @return Quote array
+	 */
 	@GetMapping("/quotes/{term}")
 	public Quote[] quotes(@PathVariable String term)
     {
