@@ -17,9 +17,9 @@ public class QuoteServiceController {
 	public QuoteService quoteService;
 	
 	/**
-	 * Returns a list of quotes using term as the search criteria.
+	 * Rest request searches quotes using a search term.
 	 * @param term
-	 * @return
+	 * @return Quote array
 	 */
 	@GetMapping("/quotes/{term}")
 	public Quote[] quotes(@PathVariable String term)
