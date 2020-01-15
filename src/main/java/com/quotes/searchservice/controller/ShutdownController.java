@@ -13,7 +13,7 @@ public class ShutdownController implements ApplicationContextAware {
     private ApplicationContext context;
     
     /**
-     * kills the context and the o/s process
+     * Kills the context and the o/s process
      */
     @PostMapping("/shutdownContext")
     public void shutdownContext() {
