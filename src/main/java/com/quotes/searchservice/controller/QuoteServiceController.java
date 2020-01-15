@@ -19,7 +19,7 @@ public class QuoteServiceController {
 	/**
 	 * Returns a list of quotes using a search term.
 	 * @param term
-	 * @return
+	 * @return Quote array
 	 */
 	@GetMapping("/quotes/{term}")
 	public Quote[] quotes(@PathVariable String term)
